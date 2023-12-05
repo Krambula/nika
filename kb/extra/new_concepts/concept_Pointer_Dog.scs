@@ -1,0 +1,48 @@
+concept_Pointer_Dog
+<- sc_node_class;
+=> nrel_main_idtf:
+    [Пойнтер (собака)]
+    (* <- lang_ru;; *);
+    [Pointer Dog]
+    (* <- lang_en;; *);
+<- rrel_key_sc_element:
+    ...
+    (*
+    => nrel_main_idtf:
+        [Опр. (Пойнтер - собака)]
+        (* <- lang_ru;; *);
+        [Def. (Pointer Dog)]
+        (* <- lang_en;; *);;
+    <- definition;;
+    <= nrel_sc_text_translation:
+        ...
+        (*
+        -> rrel_example:
+            [Пойнтер - это порода охотничьих собак, специализированных на поиске и указывании местонахождения дичи для охотника. Они обладают отличным чутьем и умением "указывать" на дичь, останавливаясь и направляя морду в сторону обнаруженной дичи.]
+            (* <- lang_ru;; *);;
+        *);
+        ...
+        (*
+        -> rrel_example: 
+            [Pointer is a breed of hunting dogs specialized in searching for and pointing out the location of game for hunters. They have an excellent sense of smell and the ability to "point" at game by stopping and directing their nose towards the detected game.]
+            (* <- lang_en;; *);;
+        *);;
+    *);
+
+<- rrel_key_sc_element:
+    ...
+    (*
+    => nrel_main_idtf:
+        [Утв. (Пойнтер - собака)]
+        (* <- lang_ru;; *);;
+    <- statement;;
+    <= nrel_sc_text_translation:
+        ...
+        (*
+        -> rrel_example:
+            [Пойнтеры часто используются на охоте благодаря своей способности обнаруживать дичь и предупреждать охотника. Они также являются преданными компаньонами и дружелюбными питомцами.]
+            (* <- lang_ru;; *);;
+        *);;
+    *);
+
+<= nrel_inclusion: concept_Hunting_Dogs;;

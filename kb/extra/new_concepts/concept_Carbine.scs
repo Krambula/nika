@@ -1,0 +1,48 @@
+concept_Carbine
+<- sc_node_class;
+=> nrel_main_idtf:
+    [Карабин]
+    (* <- lang_ru;; *);
+    [Carbine]
+    (* <- lang_en;; *);
+<- rrel_key_sc_element:
+    ...
+    (*
+    => nrel_main_idtf:
+        [Опр. (Карабин)]
+        (* <- lang_ru;; *);
+        [Def. (Carbine)]
+        (* <- lang_en;; *);;
+    <- definition;;
+    <= nrel_sc_text_translation:
+        ...
+        (*
+        -> rrel_example:
+            [Карабин - это короткоствольное огнестрельное оружие, обычно с рукояткой и прикладом, предназначенное для стрельбы на относительно короткие дистанции. Карабины могут использоваться для охоты и в военных целях.]
+            (* <- lang_ru;; *);;
+        *);
+        ...
+        (*
+        -> rrel_example: 
+            [A carbine is a short-barreled firearm, usually with a stock and a foregrip, designed for shooting at relatively short distances. Carbines can be used for hunting and military purposes.]
+            (* <- lang_en;; *);;
+        *);;
+    *);
+
+<- rrel_key_sc_element:
+    ...
+    (*
+    => nrel_main_idtf:
+        [Утв. (Карабин)]
+        (* <- lang_ru;; *);;
+    <- statement;;
+    <= nrel_sc_text_translation:
+        ...
+        (*
+        -> rrel_example:
+            [Карабины часто используются в ситуациях, где важны компактность и маневренность. Их характеристики делают их подходящими для различных сценариев использования.]
+            (* <- lang_ru;; *);;
+        *);;
+    *);
+
+<= nrel_inclusion: concept_Weapon;;

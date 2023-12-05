@@ -1,0 +1,48 @@
+concept_Hound_Dog
+<- sc_node_class;
+=> nrel_main_idtf:
+    [Гончие]
+    (* <- lang_ru;; *);
+    [Hound Dogs]
+    (* <- lang_en;; *);
+<- rrel_key_sc_element:
+    ...
+    (*
+    => nrel_main_idtf:
+        [Опр. (Гончие)]
+        (* <- lang_ru;; *);
+        [Def. (Hound Dogs)]
+        (* <- lang_en;; *);;
+    <- definition;;
+    <= nrel_sc_text_translation:
+        ...
+        (*
+        -> rrel_example:
+            [Гончие - это порода охотничьих собак, специализированных в отслеживании и охоте на запах дичи. Они отличаются отличным обонянием, выносливостью и умением работать в группе.]
+            (* <- lang_ru;; *);;
+        *);
+        ...
+        (*
+        -> rrel_example: 
+            [Hound dogs are a breed of hunting dogs specialized in tracking and hunting game by scent. They are characterized by excellent sense of smell, endurance, and the ability to work in groups.]
+            (* <- lang_en;; *);;
+        *);;
+    *);
+
+<- rrel_key_sc_element:
+    ...
+    (*
+    => nrel_main_idtf:
+        [Утв. (Гончие)]
+        (* <- lang_ru;; *);;
+    <- statement;;
+    <= nrel_sc_text_translation:
+        ...
+        (*
+        -> rrel_example:
+            [Гончие широко используются охотниками для трекинга и охоты на различных видах дичи, предоставляя ценные навыки и помощь в охоте.]
+            (* <- lang_ru;; *);;
+        *);;
+    *);
+
+<= nrel_inclusion: concept_Hunting_Dogs;;

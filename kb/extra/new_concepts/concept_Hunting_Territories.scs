@@ -1,0 +1,48 @@
+concept_Hunting_Territories
+<- sc_node_class;
+=> nrel_main_idtf:
+    [Охотничьи территории]
+    (* <- lang_ru;; *);
+    [Hunting Territories]
+    (* <- lang_en;; *);
+<- rrel_key_sc_element:
+    ...
+    (*
+    => nrel_main_idtf:
+        [Опр. (Охотничьи территории)]
+        (* <- lang_ru;; *);
+        [Def. (Hunting Territories)]
+        (* <- lang_en;; *);;
+    <- definition;;
+    <= nrel_sc_text_translation:
+        ...
+        (*
+        -> rrel_example:
+            [Охотничьи территории - определенные области, где проводится охота. Эти территории могут варьироваться в размерах и распределении видов дичи, что влияет на выбор стратегий и методов охоты.]
+            (* <- lang_ru;; *);;
+        *);
+        ...
+        (*
+        -> rrel_example: 
+            [Hunting territories are specific areas where hunting takes place. These territories may vary in size and distribution of game species, influencing the choice of hunting strategies and methods.]
+            (* <- lang_en;; *);;
+        *);;
+    *);
+
+<- rrel_key_sc_element:
+    ...
+    (*
+    => nrel_main_idtf:
+        [Утв. (Охотничьи территории)]
+        (* <- lang_ru;; *);;
+    <- statement;;
+    <= nrel_sc_text_translation:
+        ...
+        (*
+        -> rrel_example:
+            [Охотничьи территории могут быть управляемыми охотничьими угодьями, национальными парками или другими природными резерватами, где регулируется охота для сохранения экосистемы.]
+            (* <- lang_ru;; *);;
+        *);;
+    *);
+
+<= nrel_inclusion: concept_Hunting;;

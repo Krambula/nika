@@ -1,0 +1,48 @@
+concept_Plains
+<- sc_node_class;
+=> nrel_main_idtf:
+    [Плоскогорья]
+    (* <- lang_ru;; *);
+    [Plains]
+    (* <- lang_en;; *);
+<- rrel_key_sc_element:
+    ...
+    (*
+    => nrel_main_idtf:
+        [Опр. (Плоскогорья)]
+        (* <- lang_ru;; *);
+        [Def. (Plains)]
+        (* <- lang_en;; *);;
+    <- definition;;
+    <= nrel_sc_text_translation:
+        ...
+        (*
+        -> rrel_example:
+            [Плоскогорья - это обширные равнинные области с относительно малой рельефной выраженностью. Они включают газоны, степи, и луга, характеризующиеся отсутствием крутых перепадов высот. Плоскогорья играют важную роль в сельском хозяйстве и являются местом обитания разнообразных видов растений и животных.]
+            (* <- lang_ru;; *);;
+        *);
+        ...
+        (*
+        -> rrel_example: 
+            [Plains are extensive flat areas with relatively low relief. They include grasslands, steppes, and meadows characterized by the absence of steep height variations. Plains play a crucial role in agriculture and serve as habitats for a variety of plant and animal species.]
+            (* <- lang_en;; *);;
+        *);;
+    *);
+
+<- rrel_key_sc_element:
+    ...
+    (*
+    => nrel_main_idtf:
+        [Утв. (Плоскогорья)]
+        (* <- lang_ru;; *);;
+    <- statement;;
+    <= nrel_sc_text_translation:
+        ...
+        (*
+        -> rrel_example:
+            [Плоскогорья представляют собой уникальные экосистемы, обеспечивающие важные услуги, такие как почвообразование и регулирование водных ресурсов. Они также имеют важное культурное значение и предоставляют место для сельского и экологического туризма.]
+            (* <- lang_ru;; *);;
+        *);;
+    *);
+
+<= nrel_inclusion: concept_Hunting_Territories;;

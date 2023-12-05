@@ -1,0 +1,48 @@
+concept_Aquatic_Territories
+<- sc_node_class;
+=> nrel_main_idtf:
+    [Водные Территории]
+    (* <- lang_ru;; *);
+    [Aquatic Territories]
+    (* <- lang_en;; *);
+<- rrel_key_sc_element:
+    ...
+    (*
+    => nrel_main_idtf:
+        [Опр. (Водные Территории)]
+        (* <- lang_ru;; *);
+        [Def. (Aquatic Territories)]
+        (* <- lang_en;; *);;
+    <- definition;;
+    <= nrel_sc_text_translation:
+        ...
+        (*
+        -> rrel_example:
+            [Водные территории включают в себя разнообразные водоемы, такие как океаны, моря, реки, озера и пруды. Они играют важную роль в поддержании биоразнообразия, предоставляют ресурсы для рыболовства и транспортные маршруты, а также являются местом для отдыха и рекреации.]
+            (* <- lang_ru;; *);;
+        *);
+        ...
+        (*
+        -> rrel_example: 
+            [Aquatic territories encompass diverse water bodies, such as oceans, seas, rivers, lakes, and ponds. They play a crucial role in maintaining biodiversity, providing resources for fishing and transportation routes, and serving as areas for recreation and leisure.]
+            (* <- lang_en;; *);;
+        *);;
+    *);
+
+<- rrel_key_sc_element:
+    ...
+    (*
+    => nrel_main_idtf:
+        [Утв. (Водные Территории)]
+        (* <- lang_ru;; *);;
+    <- statement;;
+    <= nrel_sc_text_translation:
+        ...
+        (*
+        -> rrel_example:
+            [Водные территории предоставляют уникальные возможности для экосистем, а также обеспечивают жизненно важные ресурсы для человека. Их управление и сохранение играют ключевую роль в обеспечении устойчивого использования водных ресурсов.]
+            (* <- lang_ru;; *);;
+        *);;
+    *);
+
+<= nrel_inclusion: concept_Hunting_Territories;;

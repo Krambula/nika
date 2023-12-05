@@ -1,0 +1,48 @@
+concept_Game_bird
+<- sc_node_class;
+=> nrel_main_idtf:
+    [Пернатая дичь]
+    (* <- lang_ru;; *);
+    [Game bird]
+    (* <- lang_en;; *);
+<- rrel_key_sc_element:
+    ...
+    (*
+    => nrel_main_idtf:
+        [Опр. (Пернатая дичь)]
+        (* <- lang_ru;; *);
+        [Def. (Game birds)]
+        (* <- lang_en;; *);;
+    <- definition;;
+    <= nrel_sc_text_translation:
+        ...
+        (*
+        -> rrel_example:
+            [Перна́тая дичь — традиционное наименование птиц, являющихся объектом охоты, любительской и промысловой]
+            (* <- lang_ru;; *);;
+        *);
+        ...
+        (*
+        -> rrel_example: 
+            [Feathered game is the traditional name of birds that are the object of hunting, amateur and commercial activities.]
+            (* <- lang_en;; *);;
+        *);;
+    *);
+
+<- rrel_key_sc_element:
+    ...
+    (*
+    => nrel_main_idtf:
+        [Утв. (Пернатая дичь)]
+        (* <- lang_ru;; *);;
+    <- statement;;
+    <= nrel_sc_text_translation:
+        ...
+        (*
+        -> rrel_example:
+            [В охотничьей практике пернатая дичь делится не так, как принято в зоологической номенклатуре.]
+            (* <- lang_ru;; *);;
+        *);;
+    *);
+
+<= nrel_inclusion: concept_Game;;

@@ -1,0 +1,48 @@
+concept_Tools
+<- sc_node_class;
+=> nrel_main_idtf:
+    [Инструменты]
+    (* <- lang_ru;; *);
+    [Tools]
+    (* <- lang_en;; *);
+<- rrel_key_sc_element:
+    ...
+    (*
+    => nrel_main_idtf:
+        [Опр. (Инструменты)]
+        (* <- lang_ru;; *);
+        [Def. (Tools)]
+        (* <- lang_en;; *);;
+    <- definition;;
+    <= nrel_sc_text_translation:
+        ...
+        (*
+        -> rrel_example:
+            [Инструменты - это ручные или механические устройства, предназначенные для выполнения конкретных задач. В контексте охоты могут включать ножи, ловушки, прицельные устройства, и другие инструменты.]
+            (* <- lang_ru;; *);;
+        *);
+        ...
+        (*
+        -> rrel_example: 
+            [Tools are handheld or mechanical devices designed for specific tasks. In the context of hunting, they may include knives, traps, sighting devices, and other tools.]
+            (* <- lang_en;; *);;
+        *);;
+    *);
+
+<- rrel_key_sc_element:
+    ...
+    (*
+    => nrel_main_idtf:
+        [Утв. (Инструменты)]
+        (* <- lang_ru;; *);;
+    <- statement;;
+    <= nrel_sc_text_translation:
+        ...
+        (*
+        -> rrel_example:
+            [Инструменты играют важную роль в охоте, помогая охотникам в различных аспектах, таких как обработка дичи, следование за добычей и обеспечение безопасности.]
+            (* <- lang_ru;; *);;
+        *);;
+    *);
+
+<= nrel_inclusion: concept_Equipment;;

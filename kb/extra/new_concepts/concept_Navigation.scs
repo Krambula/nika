@@ -1,0 +1,48 @@
+concept_Navigation
+<- sc_node_class;
+=> nrel_main_idtf:
+    [Навигация]
+    (* <- lang_ru;; *);
+    [Navigation]
+    (* <- lang_en;; *);
+<- rrel_key_sc_element:
+    ...
+    (*
+    => nrel_main_idtf:
+        [Опр. (Навигация)]
+        (* <- lang_ru;; *);
+        [Def. (Navigation)]
+        (* <- lang_en;; *);;
+    <- definition;;
+    <= nrel_sc_text_translation:
+        ...
+        (*
+        -> rrel_example:
+            [Навигация - это процесс определения местоположения и направления движения с использованием различных средств, таких как карты, компасы, GPS-устройства. В охоте навигация важна для определения местоположения дичи и безопасного перемещения в лесу или на открытой местности.]
+            (* <- lang_ru;; *);;
+        *);
+        ...
+        (*
+        -> rrel_example: 
+            [Navigation is the process of determining the location and direction of movement using various tools such as maps, compasses, GPS devices. In hunting, navigation is crucial for locating game and safely moving in forests or open terrain.]
+            (* <- lang_en;; *);;
+        *);;
+    *);
+
+<- rrel_key_sc_element:
+    ...
+    (*
+    => nrel_main_idtf:
+        [Утв. (Навигация)]
+        (* <- lang_ru;; *);;
+    <- statement;;
+    <= nrel_sc_text_translation:
+        ...
+        (*
+        -> rrel_example:
+            [Навигация играет важную роль в успешной охоте, обеспечивая охотникам возможность эффективного перемещения по местности и нахождения оптимальных мест для добычи.]
+            (* <- lang_ru;; *);;
+        *);;
+    *);
+
+<= nrel_inclusion: concept_Equipment;;

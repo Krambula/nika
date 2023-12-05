@@ -1,0 +1,48 @@
+concept_Hunter
+<- sc_node_class;
+=> nrel_main_idtf:
+    [Охотники]
+    (* <- lang_ru;; *);
+    [Hunters]
+    (* <- lang_en;; *);
+<- rrel_key_sc_element:
+    ...
+    (*
+    => nrel_main_idtf:
+        [Опр. (Охотники)]
+        (* <- lang_ru;; *);
+        [Def. (Hunters)]
+        (* <- lang_en;; *);;
+    <- definition;;
+    <= nrel_sc_text_translation:
+        ...
+        (*
+        -> rrel_example:
+            [Охотники - это группа животных и человек, занимающихся охотой для получения пищи. У охотников разнообразные стратегии и методы охоты, включая использование инструментов и совместную охоту в группах.]
+            (* <- lang_ru;; *);;
+        *);
+        ...
+        (*
+        -> rrel_example: 
+            [Hunters are a group of animals and humans engaged in hunting for food. Hunters employ various hunting strategies and methods, including the use of tools and cooperative hunting in groups.]
+            (* <- lang_en;; *);;
+        *);;
+    *);
+
+<- rrel_key_sc_element:
+    ...
+    (*
+    => nrel_main_idtf:
+        [Утв. (Охотники)]
+        (* <- lang_ru;; *);;
+    <- statement;;
+    <= nrel_sc_text_translation:
+        ...
+        (*
+        -> rrel_example:
+            [Охотники включают в себя разнообразные виды животных, такие как хищники, а также человека, который является высокоорганизованным охотником и использует различные техники для добычи пищи.]
+            (* <- lang_ru;; *);;
+        *);;
+    *);
+
+<= nrel_inclusion: concept_Hunting;;

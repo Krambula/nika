@@ -1,0 +1,48 @@
+concept_Spaniel_Dog
+<- sc_node_class;
+=> nrel_main_idtf:
+    [Спаниели]
+    (* <- lang_ru;; *);
+    [Spaniel Dogs]
+    (* <- lang_en;; *);
+<- rrel_key_sc_element:
+    ...
+    (*
+    => nrel_main_idtf:
+        [Опр. (Спаниели)]
+        (* <- lang_ru;; *);
+        [Def. (Spaniel Dogs)]
+        (* <- lang_en;; *);;
+    <- definition;;
+    <= nrel_sc_text_translation:
+        ...
+        (*
+        -> rrel_example:
+            [Спаниели - это порода охотничьих собак, специализированных на поиске и поднимании пернатой дичи. Они отличаются отличным обонянием, умным характером и способностью работать в различных условиях.]
+            (* <- lang_ru;; *);;
+        *);
+        ...
+        (*
+        -> rrel_example: 
+            [Spaniel dogs are a breed of hunting dogs specialized in searching for and flushing out game birds. They are characterized by excellent sense of smell, intelligent nature, and the ability to work in various conditions.]
+            (* <- lang_en;; *);;
+        *);;
+    *);
+
+<- rrel_key_sc_element:
+    ...
+    (*
+    => nrel_main_idtf:
+        [Утв. (Спаниели)]
+        (* <- lang_ru;; *);;
+    <- statement;;
+    <= nrel_sc_text_translation:
+        ...
+        (*
+        -> rrel_example:
+            [Спаниели являются надежными помощниками охотников при охоте на пернатую дичь, предоставляя ценные навыки и умения.]
+            (* <- lang_ru;; *);;
+        *);;
+    *);
+
+<= nrel_inclusion: concept_Hunting_Dogs;;

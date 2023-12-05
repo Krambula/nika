@@ -1,0 +1,48 @@
+concept_Hunting_Dogs
+<- sc_node_class;
+=> nrel_main_idtf:
+    [Охотничьи собаки]
+    (* <- lang_ru;; *);
+    [Hunting Dogs]
+    (* <- lang_en;; *);
+<- rrel_key_sc_element:
+    ...
+    (*
+    => nrel_main_idtf:
+        [Опр. (Охотничьи собаки)]
+        (* <- lang_ru;; *);
+        [Def. (Hunting Dogs)]
+        (* <- lang_en;; *);;
+    <- definition;;
+    <= nrel_sc_text_translation:
+        ...
+        (*
+        -> rrel_example:
+            [Охотничьи собаки - специально обученные собаки, используемые охотниками для помощи в охоте. Они могут использоваться для обнаружения, преследования и извлечения дичи, а также для других задач, связанных с охотой.]
+            (* <- lang_ru;; *);;
+        *);
+        ...
+        (*
+        -> rrel_example: 
+            [Hunting dogs are specially trained dogs used by hunters to assist in hunting. They may be used for detecting, tracking, and retrieving game, as well as other tasks related to hunting.]
+            (* <- lang_en;; *);;
+        *);;
+    *);
+
+<- rrel_key_sc_element:
+    ...
+    (*
+    => nrel_main_idtf:
+        [Утв. (Охотничьи собаки)]
+        (* <- lang_ru;; *);;
+    <- statement;;
+    <= nrel_sc_text_translation:
+        ...
+        (*
+        -> rrel_example:
+            [Охотничьи собаки играют важную роль в охоте, предоставляя охотнику дополнительные возможности и помогая повысить эффективность охоты. Различные породы охотничьих собак могут быть специализированы для разных видов дичи и задач.]
+            (* <- lang_ru;; *);;
+        *);;
+    *);
+
+<= nrel_inclusion: concept_Hunting;;

@@ -1,0 +1,38 @@
+section_subject_domain_of_Equipment
+=> nrel_main_idtf: 
+    [Раздел. Предметная область Снаряжение]
+    (* <- lang_ru;; *);
+=> nrel_main_idtf: 
+    [Section. Subject domain of Equipment]
+    (* <- lang_en;; *);
+
+<- rrel_key_sc_element:
+        concept_Equipment;
+        concept_Optical_Devices;
+        concept_Navigation;
+        concept_Tools;
+        concept_Hunting_Clothing;
+        subject_domain_of_Equipment;
+        concept_Hunting;;
+
+section_subject_domain_of_Equipment = [*
+subject_domain_of_Equipment
+
+=> nrel_main_idtf: 
+    [Предметная область Снаряжение]
+    (* <- lang_ru;; *);
+=> nrel_main_idtf: 
+    [Subject domain of Equipment]
+    (* <- lang_en;; *);
+
+<= nrel_private_subject_domain:
+    section_subject_domain_of_Equipment;
+    
+-> rrel_maximum_studied_object_class:
+    concept_Equipment;
+    
+-> rrel_not_maximum_studied_object_class:
+    concept_Equipment;
+
+<- subject_domain;;
+*];;

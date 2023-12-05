@@ -1,0 +1,48 @@
+concept_Deserts
+<- sc_node_class;
+=> nrel_main_idtf:
+    [Пустыни]
+    (* <- lang_ru;; *);
+    [Deserts]
+    (* <- lang_en;; *);
+<- rrel_key_sc_element:
+    ...
+    (*
+    => nrel_main_idtf:
+        [Опр. (Пустыни)]
+        (* <- lang_ru;; *);
+        [Def. (Deserts)]
+        (* <- lang_en;; *);;
+    <- definition;;
+    <= nrel_sc_text_translation:
+        ...
+        (*
+        -> rrel_example:
+            [Пустыни - это районы с низким уровнем осадков и ограниченным растительным покровом. Они включают арены, солончаки, песчаные дюны и другие формации. Пустыни обладают уникальной флорой и фауной, а также являются объектом научных исследований и туризма.]
+            (* <- lang_ru;; *);;
+        *);
+        ...
+        (*
+        -> rrel_example: 
+            [Deserts are areas with low precipitation levels and limited vegetation cover. They include arid, semi-arid, and sandy desert formations. Deserts host unique flora and fauna and are subjects of scientific research and tourism.]
+            (* <- lang_en;; *);;
+        *);;
+    *);
+
+<- rrel_key_sc_element:
+    ...
+    (*
+    => nrel_main_idtf:
+        [Утв. (Пустыни)]
+        (* <- lang_ru;; *);;
+    <- statement;;
+    <= nrel_sc_text_translation:
+        ...
+        (*
+        -> rrel_example:
+            [Пустыни представляют собой экосистемы, адаптированные к экстремальным условиям, таким как высокие температуры и недостаток влаги. Они играют важную роль в глобальном климате и водном цикле, а также предоставляют уникальные возможности для изучения выживания в экстремальных условиях.]
+            (* <- lang_ru;; *);;
+        *);;
+    *);
+
+<= nrel_inclusion: concept_Hunting_Territories;;

@@ -1,0 +1,48 @@
+concept_Musket
+<- sc_node_class;
+=> nrel_main_idtf:
+    [Мушкет]
+    (* <- lang_ru;; *);
+    [Musket]
+    (* <- lang_en;; *);
+<- rrel_key_sc_element:
+    ...
+    (*
+    => nrel_main_idtf:
+        [Опр. (Мушкет)]
+        (* <- lang_ru;; *);
+        [Def. (Musket)]
+        (* <- lang_en;; *);;
+    <- definition;;
+    <= nrel_sc_text_translation:
+        ...
+        (*
+        -> rrel_example:
+            [Мушкет - старинное огнестрельное оружие с длинным стволом, используемое в том числе для стрельбы стальными пулями. Мушкеты широко применялись в военных действиях в прошлом.]
+            (* <- lang_ru;; *);;
+        *);
+        ...
+        (*
+        -> rrel_example: 
+            [A musket is an antique firearm with a long barrel, used, among other things, for firing lead balls. Muskets were widely used in military actions in the past.]
+            (* <- lang_en;; *);;
+        *);;
+    *);
+
+<- rrel_key_sc_element:
+    ...
+    (*
+    => nrel_main_idtf:
+        [Утв. (Мушкет)]
+        (* <- lang_ru;; *);;
+    <- statement;;
+    <= nrel_sc_text_translation:
+        ...
+        (*
+        -> rrel_example:
+            [Мушкеты представляют историческую ценность и являются частью военной и огнестрельной истории. В настоящее время они обычно используются в качестве артефактов или для перформансов.]
+            (* <- lang_ru;; *);;
+        *);;
+    *);
+
+<= nrel_inclusion: concept_Weapon;;

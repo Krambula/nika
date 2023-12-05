@@ -1,0 +1,48 @@
+concept_Bow
+<- sc_node_class;
+=> nrel_main_idtf:
+    [Лук]
+    (* <- lang_ru;; *);
+    [Bow]
+    (* <- lang_en;; *);
+<- rrel_key_sc_element:
+    ...
+    (*
+    => nrel_main_idtf:
+        [Опр. (Лук)]
+        (* <- lang_ru;; *);
+        [Def. (Bow)]
+        (* <- lang_en;; *);;
+    <- definition;;
+    <= nrel_sc_text_translation:
+        ...
+        (*
+        -> rrel_example:
+            [Лук - старинное оружие для метания стрел, состоящее из гибкой дуги и натянутой тетивы. Луки использовались в охоте и в военных целях на протяжении многих веков.]
+            (* <- lang_ru;; *);;
+        *);
+        ...
+        (*
+        -> rrel_example: 
+            [A bow is an ancient weapon for shooting arrows, consisting of a flexible arc and a stretched string. Bows have been used in hunting and military purposes for many centuries.]
+            (* <- lang_en;; *);;
+        *);;
+    *);
+
+<- rrel_key_sc_element:
+    ...
+    (*
+    => nrel_main_idtf:
+        [Утв. (Лук)]
+        (* <- lang_ru;; *);;
+    <- statement;;
+    <= nrel_sc_text_translation:
+        ...
+        (*
+        -> rrel_example:
+            [Луки до сих пор используются в спортивных мероприятиях, таких как стрельба из лука, и являются популярным средством для занятий стрельбой из лука.]
+            (* <- lang_ru;; *);;
+        *);;
+    *);
+
+<= nrel_inclusion: concept_Weapon;;

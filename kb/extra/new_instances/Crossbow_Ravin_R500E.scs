@@ -1,0 +1,8 @@
+Crossbow_Ravin_R500E
+<- concept_Crossbow_Ravin_R500E;
+=> nrel_main_idtf:
+[Арбалет Ravin R500E]
+(* <- lang_ru;; *);
+=> nrel_idtf:
+[Арбалет Ravin R500E - современный арбалет, предназначенный для стрельбы стрелами с высокой скоростью и точностью]
+(* <- lang_ru;; *);;

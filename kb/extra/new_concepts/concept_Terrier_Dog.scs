@@ -1,0 +1,48 @@
+concept_Terrier_Dog
+<- sc_node_class;
+=> nrel_main_idtf:
+    [Терьеры]
+    (* <- lang_ru;; *);
+    [Terrier Dogs]
+    (* <- lang_en;; *);
+<- rrel_key_sc_element:
+    ...
+    (*
+    => nrel_main_idtf:
+        [Опр. (Терьеры)]
+        (* <- lang_ru;; *);
+        [Def. (Terrier Dogs)]
+        (* <- lang_en;; *);;
+    <- definition;;
+    <= nrel_sc_text_translation:
+        ...
+        (*
+        -> rrel_example:
+            [Терьеры - это порода охотничьих собак, изначально выведенных для охоты на грызунов и подземной работы. Они отличаются энергичным характером, компактным размером и отвагой.]
+            (* <- lang_ru;; *);;
+        *);
+        ...
+        (*
+        -> rrel_example: 
+            [Terrier dogs are a breed of hunting dogs originally bred for hunting rodents and underground work. They are characterized by an energetic nature, compact size, and courage.]
+            (* <- lang_en;; *);;
+        *);;
+    *);
+
+<- rrel_key_sc_element:
+    ...
+    (*
+    => nrel_main_idtf:
+        [Утв. (Терьеры)]
+        (* <- lang_ru;; *);;
+    <- statement;;
+    <= nrel_sc_text_translation:
+        ...
+        (*
+        -> rrel_example:
+            [Терьеры являются универсальными помощниками охотника благодаря своей преданности, быстроте и способности справляться с различными видами охоты.]
+            (* <- lang_ru;; *);;
+        *);;
+    *);
+
+<= nrel_inclusion: concept_Hunting_Dogs;;

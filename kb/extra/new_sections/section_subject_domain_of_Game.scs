@@ -1,0 +1,38 @@
+section_subject_domain_of_Game
+=> nrel_main_idtf: 
+    [Раздел. Предметная область Дичь]
+    (* <- lang_ru;; *);
+=> nrel_main_idtf: 
+    [Section. Subject domain of Game]
+    (* <- lang_en;; *);
+
+<- rrel_key_sc_element:
+        concept_Game;
+	concept_Game_bird;
+	concept_Marine_Game;
+	concept_Reptilian_Game;
+	concept_Land_mammals;
+        subject_domain_of_Game;
+        concept_Hunting;;
+
+section_subject_domain_of_Game = [*
+subject_domain_of_Game
+
+=> nrel_main_idtf: 
+    [Предметная область Дичь]
+    (* <- lang_ru;; *);
+=> nrel_main_idtf: 
+    [Subject domain of Game]
+    (* <- lang_en;; *);
+
+<= nrel_private_subject_domain:
+    section_subject_domain_of_Game;
+    
+-> rrel_maximum_studied_object_class:
+    concept_Hunting;
+    
+-> rrel_not_maximum_studied_object_class:
+    concept_Game;
+
+<- subject_domain;;
+*];;

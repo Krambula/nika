@@ -1,0 +1,48 @@
+concept_Firearm
+<- sc_node_class;
+=> nrel_main_idtf:
+    [Огнестрельное оружие]
+    (* <- lang_ru;; *);
+    [Firearm]
+    (* <- lang_en;; *);
+<- rrel_key_sc_element:
+    ...
+    (*
+    => nrel_main_idtf:
+        [Опр. (Огнестрельное оружие)]
+        (* <- lang_ru;; *);
+        [Def. (Firearm)]
+        (* <- lang_en;; *);;
+    <- definition;;
+    <= nrel_sc_text_translation:
+        ...
+        (*
+        -> rrel_example:
+            [Огнестрельное оружие - это тип оружия, использующий силу пороховых газов для запуска снаряда. К огнестрельному оружию относятся ружья, пистолеты, пулеметы и другие устройства.]
+            (* <- lang_ru;; *);;
+        *);
+        ...
+        (*
+        -> rrel_example: 
+            [A firearm is a type of weapon that uses the force of gunpowder gases to launch a projectile. Firearms include rifles, pistols, machine guns, and other devices.]
+            (* <- lang_en;; *);;
+        *);;
+    *);
+
+<- rrel_key_sc_element:
+    ...
+    (*
+    => nrel_main_idtf:
+        [Утв. (Огнестрельное оружие)]
+        (* <- lang_ru;; *);;
+    <- statement;;
+    <= nrel_sc_text_translation:
+        ...
+        (*
+        -> rrel_example:
+            [Огнестрельное оружие широко применяется для охоты, спорта и в военных целях. Различные модели и конфигурации обеспечивают разнообразие в применении и возможностях.]
+            (* <- lang_ru;; *);;
+        *);;
+    *);
+
+<= nrel_inclusion: concept_Weapon;;

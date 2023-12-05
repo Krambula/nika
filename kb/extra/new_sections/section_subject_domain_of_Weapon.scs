@@ -1,0 +1,39 @@
+section_subject_domain_of_Weapon
+=> nrel_main_idtf: 
+    [Раздел. Предметная область Оружие]
+    (* <- lang_ru;; *);
+=> nrel_main_idtf: 
+    [Section. Subject domain of Weapon]
+    (* <- lang_en;; *);
+
+<- rrel_key_sc_element:
+        concept_Weapon;
+	concept_Firearm;
+	concept_Carbine;
+	concept_Musket;
+	concept_Bow;
+	concept_Crossbow;
+        subject_domain_of_Weapon;
+        concept_Hunting;;
+
+section_subject_domain_of_Weapon = [*
+subject_domain_of_Weapon
+
+=> nrel_main_idtf: 
+    [Предметная область Оружие]
+    (* <- lang_ru;; *);
+=> nrel_main_idtf: 
+    [Subject domain of Weapon]
+    (* <- lang_en;; *);
+
+<= nrel_private_subject_domain:
+    section_subject_domain_of_Weapon;
+    
+-> rrel_maximum_studied_object_class:
+    concept_Weapon;
+    
+-> rrel_not_maximum_studied_object_class:
+    concept_Weapon;
+
+<- subject_domain;;
+*];;

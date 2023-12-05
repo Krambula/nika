@@ -1,0 +1,48 @@
+concept_Hunting_Clothing
+<- sc_node_class;
+=> nrel_main_idtf:
+    [Охотничья одежда]
+    (* <- lang_ru;; *);
+    [Hunting Clothing]
+    (* <- lang_en;; *);
+<- rrel_key_sc_element:
+    ...
+    (*
+    => nrel_main_idtf:
+        [Опр. (Охотничья одежда)]
+        (* <- lang_ru;; *);
+        [Def. (Hunting Clothing)]
+        (* <- lang_en;; *);;
+    <- definition;;
+    <= nrel_sc_text_translation:
+        ...
+        (*
+        -> rrel_example:
+            [Охотничья одежда - специализированная одежда, предназначенная для использования охотниками во время охоты. Она обеспечивает комфорт, защиту от погодных условий и обеспечивает скрытность на природе.]
+            (* <- lang_ru;; *);;
+        *);
+        ...
+        (*
+        -> rrel_example: 
+            [Hunting clothing is specialized attire designed for use by hunters during hunting activities. It provides comfort, protection from weather conditions, and aids in blending into the natural environment.]
+            (* <- lang_en;; *);;
+        *);;
+    *);
+
+<- rrel_key_sc_element:
+    ...
+    (*
+    => nrel_main_idtf:
+        [Утв. (Охотничья одежда)]
+        (* <- lang_ru;; *);;
+    <- statement;;
+    <= nrel_sc_text_translation:
+        ...
+        (*
+        -> rrel_example:
+            [Охотничья одежда может включать камуфлированные элементы, устойчивость к ветру и влаге, а также специализированные карманы для хранения охотничьего снаряжения.]
+            (* <- lang_ru;; *);;
+        *);;
+    *);
+
+<= nrel_inclusion: concept_Equipment;;

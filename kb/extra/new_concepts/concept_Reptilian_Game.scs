@@ -1,0 +1,48 @@
+concept_Reptilian_Game
+<- sc_node_class;
+=> nrel_main_idtf:
+    [Пресмыкающаяся Дичь]
+    (* <- lang_ru;; *);
+    [Reptilian Game]
+    (* <- lang_en;; *);
+<- rrel_key_sc_element:
+    ...
+    (*
+    => nrel_main_idtf:
+        [Опр. (Пресмыкающаяся Дичь)]
+        (* <- lang_ru;; *);
+        [Def. (Reptilian Game)]
+        (* <- lang_en;; *);;
+    <- definition;;
+    <= nrel_sc_text_translation:
+        ...
+        (*
+        -> rrel_example:
+            [Пресмыкающаяся дичь включает в себя различные виды диких рептилий, таких как змеи, ящерицы и крокодилы, которых охотники преследуют для развлечения или в качестве источника пищи.]
+            (* <- lang_ru;; *);;
+        *);
+        ...
+        (*
+        -> rrel_example: 
+            [Reptilian Game encompasses various species of wild reptiles, including snakes, lizards, and crocodiles, that hunters pursue for recreation or as a food source.]
+            (* <- lang_en;; *);;
+        *);;
+    *);
+
+<- rrel_key_sc_element:
+    ...
+    (*
+    => nrel_main_idtf:
+        [Утв. (Пресмыкающаяся Дичь)]
+        (* <- lang_ru;; *);;
+    <- statement;;
+    <= nrel_sc_text_translation:
+        ...
+        (*
+        -> rrel_example:
+            [Пресмыкающаяся дичь может быть объектом охоты в различных природных средах, предоставляя разнообразные возможности для охоты на дикую рептилию.]
+            (* <- lang_ru;; *);;
+        *);;
+    *);
+
+<= nrel_inclusion: concept_Gameg;;

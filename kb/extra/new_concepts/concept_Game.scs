@@ -1,0 +1,48 @@
+concept_Game
+<- sc_node_class;
+=> nrel_main_idtf:
+    [Дичь]
+    (* <- lang_ru;; *);
+    [Game]
+    (* <- lang_en;; *);
+<- rrel_key_sc_element:
+    ...
+    (*
+    => nrel_main_idtf:
+        [Опр. (Дичь)]
+        (* <- lang_ru;; *);
+        [Def. (Game)]
+        (* <- lang_en;; *);;
+    <- definition;;
+    <= nrel_sc_text_translation:
+        ...
+        (*
+        -> rrel_example:
+            [Дичь - это дикие животные, которых охотники преследуют и убивают для получения пищи или в качестве спортивной занятии. Дичь может включать различные виды животных, такие как косули, зайцы, и пернатую дичь.]
+            (* <- lang_ru;; *);;
+        *);
+        ...
+        (*
+        -> rrel_example: 
+            [Game refers to wild animals that hunters pursue and kill for food or as a sporting activity. Game can include various species of animals, such as deer, rabbits, and game birds.]
+            (* <- lang_en;; *);;
+        *);;
+    *);
+
+<- rrel_key_sc_element:
+    ...
+    (*
+    => nrel_main_idtf:
+        [Утв. (Дичь)]
+        (* <- lang_ru;; *);;
+    <- statement;;
+    <= nrel_sc_text_translation:
+        ...
+        (*
+        -> rrel_example:
+            [Дичь представляет собой объект охоты, который может варьироваться в размерах и виде. Охота на дичь может быть проведена в различных условиях и с использованием различных методов.]
+            (* <- lang_ru;; *);;
+        *);;
+    *);
+
+<= nrel_inclusion: concept_Hunting;;

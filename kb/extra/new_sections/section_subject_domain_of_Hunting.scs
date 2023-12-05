@@ -1,0 +1,66 @@
+section_subject_domain_of_Hunting
+=> nrel_main_idtf: 
+    [Раздел. Предметная область Охота]
+    (* <- lang_ru;; *);
+=> nrel_main_idtf: 
+    [Section. Subject domain of Hunting]
+    (* <- lang_en;; *);
+    
+<= nrel_section_decomposition: 
+    {
+        section_subject_domain_of_Hunter;
+	section_subject_domain_of_Weapon;
+	section_subject_domain_of_Equipment;
+        section_subject_domain_of_Game;
+        section_subject_domain_of_Hunting_Dogs;
+        section_subject_domain_of_Hunting_Territories
+    };
+
+<- rrel_key_sc_element:
+    concept_Hunter;
+    concept_Equipment;
+    concept_Weapon;
+    concept_Game;
+    concept_Hunting_Dogs;
+    concept_Hunting_Territories;
+    nrel_Hunting_Equipment;
+    nrel_Hunting_Season;
+    nrel_Hunting_Regulations;
+    nrel_Trophy;;
+
+section_subject_domain_of_Hunting = [*
+    subject_domain_of_Hunting
+
+=> nrel_main_idtf: 
+    [Предметная область Охота]
+    (* <- lang_ru;; *);
+=> nrel_main_idtf: 
+    [Subject domain of Hunting]
+    (* <- lang_en;; *);
+
+<= nrel_private_subject_domain:
+        section_subject_domain_of_Hunter;
+	section_subject_domain_of_Weapon;
+	section_subject_domain_of_Equipment;
+        section_subject_domain_of_Game;
+        section_subject_domain_of_Hunting_Dogs;
+        section_subject_domain_of_Hunting_Territories;    
+-> rrel_maximum_studied_object_class:
+    concept_Hunting;
+    
+-> rrel_not_maximum_studied_object_class:
+    concept_Hunter;
+    concept_Equipment;
+    concept_Weapon;
+    concept_Game;
+    concept_Hunting_Dogs;
+    concept_Hunting_Territories;
+    
+-> rrel_explored_relation:
+    nrel_Hunting_Equipment;
+    nrel_Hunting_Season;
+    nrel_Hunting_Regulations;
+    nrel_Trophy;
+
+<- subject_domain;;
+*];;

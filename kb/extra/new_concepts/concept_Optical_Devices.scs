@@ -1,0 +1,48 @@
+concept_Optical_Devices
+<- sc_node_class;
+=> nrel_main_idtf:
+    [Оптические Приборы]
+    (* <- lang_ru;; *);
+    [Optical Devices]
+    (* <- lang_en;; *);
+<- rrel_key_sc_element:
+    ...
+    (*
+    => nrel_main_idtf:
+        [Опр. (Оптические Приборы)]
+        (* <- lang_ru;; *);
+        [Def. (Optical Devices)]
+        (* <- lang_en;; *);;
+    <- definition;;
+    <= nrel_sc_text_translation:
+        ...
+        (*
+        -> rrel_example:
+            [Оптические приборы - это устройства, использующие оптические элементы для улучшения видимости, наблюдения и измерения. В охоте оптические приборы, такие как бинокли, телескопы и прицелы, играют важную роль в определении расстояния до дичи и обеспечении точной стрельбы.]
+            (* <- lang_ru;; *);;
+        *);
+        ...
+        (*
+        -> rrel_example: 
+            [Optical devices are devices that use optical elements to enhance visibility, observation, and measurement. In hunting, optical devices such as binoculars, telescopes, and scopes play a crucial role in determining the distance to game and ensuring accurate shooting.]
+            (* <- lang_en;; *);;
+        *);;
+    *);
+
+<- rrel_key_sc_element:
+    ...
+    (*
+    => nrel_main_idtf:
+        [Утв. (Оптические Приборы)]
+        (* <- lang_ru;; *);;
+    <- statement;;
+    <= nrel_sc_text_translation:
+        ...
+        (*
+        -> rrel_example:
+            [Оптические приборы являются неотъемлемой частью охотничьего снаряжения, обеспечивая охотникам возможность более детального и точного наблюдения за окружающей средой и дичью.]
+            (* <- lang_ru;; *);;
+        *);;
+    *);
+
+<= nrel_inclusion: concept_Equipment;;

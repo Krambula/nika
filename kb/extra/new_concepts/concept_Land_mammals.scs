@@ -1,0 +1,48 @@
+concept_Land_mammals
+<- sc_node_class;
+=> nrel_main_idtf:
+    [Cухопутные млекопитающие]
+    (* <- lang_ru;; *);
+    [Land mammals]
+    (* <- lang_en;; *);
+<- rrel_key_sc_element:
+    ...
+    (*
+    => nrel_main_idtf:
+        [Опр. (Cухопутные млекопитающие)]
+        (* <- lang_ru;; *);
+        [Def. (Land mammals)]
+        (* <- lang_en;; *);;
+    <- definition;;
+    <= nrel_sc_text_translation:
+        ...
+        (*
+        -> rrel_example:
+            [Cухопутные млекопитающие — класс позвоночных животных, основной отличительной особенностью которых является вскармливание детёнышей молоком.]
+            (* <- lang_ru;; *);;
+        *);
+        ...
+        (*
+        -> rrel_example: 
+            [Land mammals - a class of vertebrates whose main distinguishing feature is the feeding of cubs with milk.]
+            (* <- lang_en;; *);;
+        *);;
+    *);
+
+<- rrel_key_sc_element:
+    ...
+    (*
+    => nrel_main_idtf:
+        [Утв. (Cухопутные млекопитающие)]
+        (* <- lang_ru;; *);;
+    <- statement;;
+    <= nrel_sc_text_translation:
+        ...
+        (*
+        -> rrel_example:
+            [Млекопитающие распространены почти повсеместно.]
+            (* <- lang_ru;; *);;
+        *);;
+    *);
+
+<= nrel_inclusion: concept_Game;;

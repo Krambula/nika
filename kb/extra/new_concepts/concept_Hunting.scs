@@ -1,0 +1,47 @@
+concept_Hunting
+<- sc_node_class;
+=> nrel_main_idtf:
+    [Охота]
+    (* <- lang_ru;; *);
+    [Hunting]
+    (* <- lang_en;; *);
+<- rrel_key_sc_element:
+    ...
+    (*
+    => nrel_main_idtf:
+        [Опр. (Охота)]
+        (* <- lang_ru;; *);
+        [Def. (Hunting)]
+        (* <- lang_en;; *);;
+    <- definition;;
+    <= nrel_sc_text_translation:
+        ...
+        (*
+        -> rrel_example:
+            [Охота - это деятельность, связанная с поиском, преследованием, и убийством дичи. Охота может проводиться для получения пищи, спорта, или контроля численности диких популяций.]
+            (* <- lang_ru;; *);;
+        *);
+        ...
+        (*
+        -> rrel_example: 
+            [Hunting is the activity involving the search, pursuit, and killing of game. Hunting may be conducted for food, sport, or wildlife population control.]
+            (* <- lang_en;; *);;
+        *);;
+    *);
+
+<- rrel_key_sc_element:
+    ...
+    (*
+    => nrel_main_idtf:
+        [Утв. (Охота)]
+        (* <- lang_ru;; *);;
+    <- statement;;
+    <= nrel_sc_text_translation:
+        ...
+        (*
+        -> rrel_example:
+            [Охота имеет давнюю историю и может быть важным аспектом культуры различных народов. Методы охоты и виды дичи могут различаться в зависимости от региона и традиций.]
+            (* <- lang_ru;; *);;
+        *);;
+    *);;
+

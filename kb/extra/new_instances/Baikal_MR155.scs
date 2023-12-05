@@ -1,0 +1,8 @@
+Baikal_MR155
+<- concept_Firearm;
+=> nrel_main_idtf:
+[Байкал МР-155]
+(* <- lang_ru;; *);
+=> nrel_idtf:
+[Байкал МР-155 - охотничье ружье, изготовленное в России]
+(* <- lang_ru;; *);;

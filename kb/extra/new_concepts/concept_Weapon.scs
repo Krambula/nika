@@ -1,0 +1,48 @@
+concept_Weapon
+<- sc_node_class;
+=> nrel_main_idtf:
+    [Оружие]
+    (* <- lang_ru;; *);
+    [Weapon]
+    (* <- lang_en;; *);
+<- rrel_key_sc_element:
+    ...
+    (*
+    => nrel_main_idtf:
+        [Опр. (Оружие)]
+        (* <- lang_ru;; *);
+        [Def. (Weapon)]
+        (* <- lang_en;; *);;
+    <- definition;;
+    <= nrel_sc_text_translation:
+        ...
+        (*
+        -> rrel_example:
+            [Оружие - инструменты и устройства, предназначенные для нанесения ущерба или поражения цели. Оружие может быть предназначено для рукопашной схватки, стрельбы, метания и других методов атаки.]
+            (* <- lang_ru;; *);;
+        *);
+        ...
+        (*
+        -> rrel_example: 
+            [Weapon - tools and devices designed to cause harm or damage to a target. Weapons can be intended for melee combat, shooting, throwing, and other methods of attack.]
+            (* <- lang_en;; *);;
+        *);;
+    *);
+
+<- rrel_key_sc_element:
+    ...
+    (*
+    => nrel_main_idtf:
+        [Утв. (Оружие)]
+        (* <- lang_ru;; *);;
+    <- statement;;
+    <= nrel_sc_text_translation:
+        ...
+        (*
+        -> rrel_example:
+            [Оружие является неотъемлемой частью истории человечества и использовалось как для обороны, так и для нападения. Различные культуры разрабатывали разнообразные виды оружия в зависимости от технологического и культурного развития.]
+            (* <- lang_ru;; *);;
+        *);;
+    *);
+
+<= nrel_inclusion: concept_Hunting;;

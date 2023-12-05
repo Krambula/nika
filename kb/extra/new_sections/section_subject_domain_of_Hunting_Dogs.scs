@@ -1,0 +1,39 @@
+section_subject_domain_of_Hunting_Dogs
+=> nrel_main_idtf: 
+    [Раздел. Предметная область Охотничьи собаки]
+    (* <- lang_ru;; *);
+=> nrel_main_idtf: 
+    [Section. Subject domain of Hunting Dogs]
+    (* <- lang_en;; *);
+
+<- rrel_key_sc_element:
+        concept_Hunting_Dogs;
+	concept_Pointer_Dog;
+	concept_Spaniel_Dog;
+	concept_Terrier_Dog;
+	concept_Hound_Dog;
+	concept_Laika_Dog;
+        subject_domain_of_Hunting_Dogs;
+        concept_Hunting;;
+
+section_subject_domain_of_Hunting_Dogs = [*
+subject_domain_of_Hunting_Dogs
+
+=> nrel_main_idtf: 
+    [Предметная область Охотничьи собаки]
+    (* <- lang_ru;; *);
+=> nrel_main_idtf: 
+    [Subject domain of Hunting Dogs]
+    (* <- lang_en;; *);
+
+<= nrel_private_subject_domain:
+    section_subject_domain_of_Hunting_Dogs;
+    
+-> rrel_maximum_studied_object_class:
+    concept_Hunting;
+    
+-> rrel_not_maximum_studied_object_class:
+    concept_Hunting_Dogs;
+
+<- subject_domain;;
+*];;

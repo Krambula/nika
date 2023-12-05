@@ -1,0 +1,48 @@
+concept_Mountainous_Areas
+<- sc_node_class;
+=> nrel_main_idtf:
+    [Горные Районы]
+    (* <- lang_ru;; *);
+    [Mountainous Areas]
+    (* <- lang_en;; *);
+<- rrel_key_sc_element:
+    ...
+    (*
+    => nrel_main_idtf:
+        [Опр. (Горные Районы)]
+        (* <- lang_ru;; *);
+        [Def. (Mountainous Areas)]
+        (* <- lang_en;; *);;
+    <- definition;;
+    <= nrel_sc_text_translation:
+        ...
+        (*
+        -> rrel_example:
+            [Горные районы представляют собой территории с высоким рельефом, характеризующиеся наличием гор, вершин, и каменистых участков. Эти области могут поддерживать уникальные экосистемы и обеспечивать важные ресурсы для жизни и хозяйственной деятельности.]
+            (* <- lang_ru;; *);;
+        *);
+        ...
+        (*
+        -> rrel_example: 
+            [Mountainous areas are territories with high relief, characterized by the presence of mountains, peaks, and rocky areas. These regions can support unique ecosystems and provide essential resources for life and economic activities.]
+            (* <- lang_en;; *);;
+        *);;
+    *);
+
+<- rrel_key_sc_element:
+    ...
+    (*
+    => nrel_main_idtf:
+        [Утв. (Горные Районы)]
+        (* <- lang_ru;; *);;
+    <- statement;;
+    <= nrel_sc_text_translation:
+        ...
+        (*
+        -> rrel_example:
+            [Горные районы имеют особое значение для сохранения биоразнообразия, предоставляют пастбища для животных и ресурсы для ряда хозяйственных деятельностей, таких как туризм и добыча полезных ископаемых.]
+            (* <- lang_ru;; *);;
+        *);;
+    *);
+
+<= nrel_inclusion: concept_Hunting_Territories;;

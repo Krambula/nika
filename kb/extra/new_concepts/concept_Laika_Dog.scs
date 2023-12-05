@@ -1,0 +1,48 @@
+concept_Laika_Dog
+<- sc_node_class;
+=> nrel_main_idtf:
+    [Лайки]
+    (* <- lang_ru;; *);
+    [Laika Dogs]
+    (* <- lang_en;; *);
+<- rrel_key_sc_element:
+    ...
+    (*
+    => nrel_main_idtf:
+        [Опр. (Лайки)]
+        (* <- lang_ru;; *);
+        [Def. (Laika Dogs)]
+        (* <- lang_en;; *);;
+    <- definition;;
+    <= nrel_sc_text_translation:
+        ...
+        (*
+        -> rrel_example:
+            [Лайки - это порода охотничьих собак, специализированных для охоты на различных видов дичи. Они отличаются выносливостью, интеллектом и адаптивностью к разным природным условиям.]
+            (* <- lang_ru;; *);;
+        *);
+        ...
+        (*
+        -> rrel_example: 
+            [Laika dogs are a breed of hunting dogs specialized in hunting various game. They are known for their endurance, intelligence, and adaptability to different natural conditions.]
+            (* <- lang_en;; *);;
+        *);;
+    *);
+
+<- rrel_key_sc_element:
+    ...
+    (*
+    => nrel_main_idtf:
+        [Утв. (Лайки)]
+        (* <- lang_ru;; *);;
+    <- statement;;
+    <= nrel_sc_text_translation:
+        ...
+        (*
+        -> rrel_example:
+            [Лайки являются популярными охотничьими собаками, широко используемыми охотниками для различных видов охоты, благодаря своим специализированным навыкам и характеристикам.]
+            (* <- lang_ru;; *);;
+        *);;
+    *);
+
+<= nrel_inclusion: concept_Hunting_Dogs;;

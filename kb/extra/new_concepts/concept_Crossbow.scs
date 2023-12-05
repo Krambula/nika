@@ -1,0 +1,48 @@
+concept_Crossbow
+<- sc_node_class;
+=> nrel_main_idtf:
+    [Арбалет]
+    (* <- lang_ru;; *);
+    [Crossbow]
+    (* <- lang_en;; *);
+<- rrel_key_sc_element:
+    ...
+    (*
+    => nrel_main_idtf:
+        [Опр. (Арбалет)]
+        (* <- lang_ru;; *);
+        [Def. (Crossbow)]
+        (* <- lang_en;; *);;
+    <- definition;;
+    <= nrel_sc_text_translation:
+        ...
+        (*
+        -> rrel_example:
+            [Арбалет - ручное оружие, предназначенное для стрельбы стрелами с помощью тетивы. Арбалеты использовались как в военных, так и в охотничьих целях.]
+            (* <- lang_ru;; *);;
+        *);
+        ...
+        (*
+        -> rrel_example: 
+            [A crossbow is a handheld weapon designed to shoot arrows using a bowstring. Crossbows have been used both for military and hunting purposes.]
+            (* <- lang_en;; *);;
+        *);;
+    *);
+
+<- rrel_key_sc_element:
+    ...
+    (*
+    => nrel_main_idtf:
+        [Утв. (Арбалет)]
+        (* <- lang_ru;; *);;
+    <- statement;;
+    <= nrel_sc_text_translation:
+        ...
+        (*
+        -> rrel_example:
+            [Современные арбалеты обычно имеют механизм для натягивания тетивы, что облегчает использование и повышает точность стрельбы. Арбалетная стрельба практикуется как в спорте, так и в рекреации.]
+            (* <- lang_ru;; *);;
+        *);;
+    *);
+
+<= nrel_inclusion: concept_Weapon;;

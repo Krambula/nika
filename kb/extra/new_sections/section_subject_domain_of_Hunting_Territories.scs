@@ -1,0 +1,40 @@
+section_subject_domain_of_Hunting_Territories
+=> nrel_main_idtf: 
+    [Раздел. Предметная область Охотничьи территории]
+    (* <- lang_ru;; *);
+=> nrel_main_idtf: 
+    [Section. Subject domain of Hunting Territories]
+    (* <- lang_en;; *);
+
+<- rrel_key_sc_element:
+        concept_Hunting_Territories;
+	concept_Plains;
+	concept_Deserts;
+	concept_Aquatic_Territories;
+	concept_Forest;
+	concept_Steppe;
+	concept_Mountainous_Areas;
+        subject_domain_of_Hunting_Territories;
+        concept_Hunting;;
+
+section_subject_domain_of_Hunting_Territories = [*
+subject_domain_of_Hunting_Territories
+
+=> nrel_main_idtf: 
+    [Предметная область Охотничьи территории]
+    (* <- lang_ru;; *);
+=> nrel_main_idtf: 
+    [Subject domain of Hunting Territories]
+    (* <- lang_en;; *);
+
+<= nrel_private_subject_domain:
+    section_subject_domain_of_Hunting_Territories;
+    
+-> rrel_maximum_studied_object_class:
+    concept_Hunting;
+    
+-> rrel_not_maximum_studied_object_class:
+    concept_Hunting_Territories;
+
+<- subject_domain;;
+*];;

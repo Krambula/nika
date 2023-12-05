@@ -1,0 +1,48 @@
+concept_Steppe
+<- sc_node_class;
+=> nrel_main_idtf:
+    [Степи]
+    (* <- lang_ru;; *);
+    [Steppes]
+    (* <- lang_en;; *);
+<- rrel_key_sc_element:
+    ...
+    (*
+    => nrel_main_idtf:
+        [Опр. (Степи)]
+        (* <- lang_ru;; *);
+        [Def. (Steppes)]
+        (* <- lang_en;; *);;
+    <- definition;;
+    <= nrel_sc_text_translation:
+        ...
+        (*
+        -> rrel_example:
+            [Степи - это экосистемы, характеризующиеся низкой деревенностью и преобладанием травянистых растений. Они распространены в различных климатических зонах и обеспечивают уникальные условия для множества видов растений и животных, а также имеют важное значение для сохранения биоразнообразия.]
+            (* <- lang_ru;; *);;
+        *);
+        ...
+        (*
+        -> rrel_example: 
+            [Steppes are ecosystems characterized by low tree cover and dominance of grassy plants. They are found in various climatic zones and provide unique conditions for a variety of plant and animal species, playing a crucial role in biodiversity conservation.]
+            (* <- lang_en;; *);;
+        *);;
+    *);
+
+<- rrel_key_sc_element:
+    ...
+    (*
+    => nrel_main_idtf:
+        [Утв. (Степи)]
+        (* <- lang_ru;; *);;
+    <- statement;;
+    <= nrel_sc_text_translation:
+        ...
+        (*
+        -> rrel_example:
+            [Степи предоставляют важные пастбища для многих видов диких животных и являются местом обитания для разнообразных растений, адаптированных к условиям открытых пространств.]
+            (* <- lang_ru;; *);;
+        *);;
+    *);
+
+<= nrel_inclusion: concept_Hunting_Territories;;

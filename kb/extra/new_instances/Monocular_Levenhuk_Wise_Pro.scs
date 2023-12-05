@@ -1,0 +1,8 @@
+Monocular_Levenhuk_Wise_Pro
+<- concept_Optical_Devices;
+=> nrel_main_idtf:
+[Монокуляр Levenhuk Wise Pro]
+(* <- lang_ru;; *);
+=> nrel_idtf:
+[Монокуляр Levenhuk Wise Pro - оптический прибор для одноглазого наблюдения]
+(* <- lang_ru;; *);;

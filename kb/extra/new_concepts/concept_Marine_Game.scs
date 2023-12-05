@@ -1,0 +1,48 @@
+concept_Marine_Game
+<- sc_node_class;
+=> nrel_main_idtf:
+    [Морская Дичь]
+    (* <- lang_ru;; *);
+    [Marine Game]
+    (* <- lang_en;; *);
+<- rrel_key_sc_element:
+    ...
+    (*
+    => nrel_main_idtf:
+        [Опр. (Морская Дичь)]
+        (* <- lang_ru;; *);
+        [Def. (Marine Game)]
+        (* <- lang_en;; *);;
+    <- definition;;
+    <= nrel_sc_text_translation:
+        ...
+        (*
+        -> rrel_example:
+            [Морская дичь включает в себя различные виды диких морских животных, таких как рыбы, морские млекопитающие и другие, которых охотники преследуют для развлечения или в качестве источника пищи.]
+            (* <- lang_ru;; *);;
+        *);
+        ...
+        (*
+        -> rrel_example: 
+            [Marine Game encompasses various species of wild marine animals, including fish, marine mammals, and others that hunters pursue for recreation or as a food source.]
+            (* <- lang_en;; *);;
+        *);;
+    *);
+
+<- rrel_key_sc_element:
+    ...
+    (*
+    => nrel_main_idtf:
+        [Утв. (Морская Дичь)]
+        (* <- lang_ru;; *);;
+    <- statement;;
+    <= nrel_sc_text_translation:
+        ...
+        (*
+        -> rrel_example:
+            [Морская дичь может быть объектом охоты как в морских водах, так и на берегах, предоставляя разнообразные возможности для рыболовства и охоты.]
+            (* <- lang_ru;; *);;
+        *);;
+    *);
+
+<= nrel_inclusion: concept_Game;;

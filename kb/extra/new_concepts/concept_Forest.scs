@@ -1,0 +1,48 @@
+concept_Forest
+<- sc_node_class;
+=> nrel_main_idtf:
+    [Леса]
+    (* <- lang_ru;; *);
+    [Forests]
+    (* <- lang_en;; *);
+<- rrel_key_sc_element:
+    ...
+    (*
+    => nrel_main_idtf:
+        [Опр. (Леса)]
+        (* <- lang_ru;; *);
+        [Def. (Forests)]
+        (* <- lang_en;; *);;
+    <- definition;;
+    <= nrel_sc_text_translation:
+        ...
+        (*
+        -> rrel_example:
+            [Леса - это большие природные территории, покрытые деревьями и другой растительностью. Леса играют важную роль в поддержании биоразнообразия, предоставляют жилье для различных видов растений и животных, а также являются источником древесины и других ресурсов.]
+            (* <- lang_ru;; *);;
+        *);
+        ...
+        (*
+        -> rrel_example: 
+            [Forests are large natural areas covered with trees and other vegetation. They play a crucial role in maintaining biodiversity, providing habitat for various plant and animal species, and serving as a source of timber and other resources.]
+            (* <- lang_en;; *);;
+        *);;
+    *);
+
+<- rrel_key_sc_element:
+    ...
+    (*
+    => nrel_main_idtf:
+        [Утв. (Леса)]
+        (* <- lang_ru;; *);;
+    <- statement;;
+    <= nrel_sc_text_translation:
+        ...
+        (*
+        -> rrel_example:
+            [Леса являются важным компонентом экосистемы, обеспечивая множество экологических, социальных и экономических выгод.]
+            (* <- lang_ru;; *);;
+        *);;
+    *);
+
+<= nrel_inclusion: concept_Hunting_Territories;;

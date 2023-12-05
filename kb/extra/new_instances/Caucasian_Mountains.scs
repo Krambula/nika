@@ -1,0 +1,8 @@
+Caucasian_Mountains
+<- concept_Mountainous_Areas;
+=> nrel_main_idtf:
+[Кавказские горы]
+(* <- lang_ru;; *);
+=> nrel_idtf:
+[Кавказские горы - горная система, расположенная в Закавказье между Черным и Каспийским морями]
+(* <- lang_ru;; *);;
